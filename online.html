@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="applicable-device" content="pc,mobile">
+    <link rel="canonical" href="https://www.wuziqi123.com" />
+    <link type="text/css" media="all" href="./skin/202002/css/so.css"
+      rel="stylesheet" />
+    <title>五子棋游戏在线玩</title>
+    <meta name="description"
+      content="五子棋起源于中国上古时代的传统黑白棋种之一。主要流行于华人和汉字文化圈，是世界上最古老的棋。通常双方分别使用黑白两色的棋子，下在棋盘直线与横线的交叉点上，先形成5子连线者获胜。"
+      />
+    <meta name="keywords" content="五子棋小游戏，双人五子棋，五子棋教程，五子棋技巧" />
+    <link rel="shortcut icon" href="./skin/202002/img/favicon.ico">
+    <script src="./skin/202002/js/a.js"></script>
+    <script crossorigin="anonymous"
+      integrity="sha512-iZIBSs+gDyTH0ZhUem9eQ1t4DcEn2B9lHxfRMeGQhyNdSUz+rb+5A3ummX6DQTOIs1XK0gOteOg/LPtSo9VJ+w=="src="https://lib.baomitu.com/socket.io/4.1.2/socket.io.js"></script>
+  </head>
+  <body class="home blog custom-background">
+    <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header">
+        <nav id="top-header">
+          <div class="top-nav">
+            <div id="user-profile"><!-- <a href="/e/member/register/" target="_blank"><i class="fa fa-user"></i> 注册</a> <span class="nav-set"> <span class="nav-login"> <a href="/e/member/login/" title="Login"><i class="fa fa-sign-in"></i> 登录</a> </span> </span>--></div>
+            <div class="menu-%e8%8f%9c%e5%8d%95b-container">
+              <ul id="menu-%e8%8f%9c%e5%8d%95b" class="top-menu">
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div id="menu-box">
+          <div id="top-menu">
+            <!--<span class="mobile-login"><a href="/e/member/login/" id="login-mobile"><i class="fa fa-user"></i></a></span>-->
+            <hgroup class="logo-site">
+              <h1 class="site-title">五子棋在线</h1>
+            </hgroup>
+            <div id="site-nav-wrap">
+              <div id="sidr-close"><a href="#sidr-close"
+                  class="toggle-sidr-close">关闭</a></div>
+              <nav id="site-nav" class="main-nav"> <a href="#sidr-main"
+                  id="navigation-toggle" class="bars"><i class="fa fa-bars"></i></a>
+                <div class="menu-%e8%8f%9c%e5%8d%95a-container">
+                  <ul id="menu-%e8%8f%9c%e5%8d%95a" class="down-menu nav-menu">
+                    <li><a href="./index.html"><span class="fontawesome-text">
+                          首页</span></a></li>
+                    <li><a href="./register.html"><span
+                          class="fontawesome-text"> 注册</span></a></li>
+                    <li><a href="./robot.html"><span class="fontawesome-text">
+                          单机版五子棋</span></a></li>
+                    <li><a href="./room.html"><span class="fontawesome-text">
+                          联机版五子棋</span></a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </header>
+      <nav class="breadcrumb"><span>五子棋：
+          是一种两人对弈的纯策略型棋类游戏，是起源于中国古代的传统黑白棋种之一。发展于日本，流行于欧美。</span></nav>
+      <div id="content" class="site-content">
+
+        <div class="wow fadeInUp" style="margin-top:0.5em;text-align: center"
+          data-wow-delay="0.3s">
+          <div class="xl4 xm4"><BR><BR>
+            五子棋游戏在线玩 口诀<BR>
+            先手要攻，后手要守，<BR>以攻为守，以守待攻。<BR>
+            攻守转换，慎思变化，<BR>先行争夺，地破天惊。<BR>
+            守取外势，攻聚内力，<BR>八卦易守，成角易攻。<BR>
+            阻断分隔，稳如泰山，<BR>不思争先，胜如登天。<BR>
+            初盘争二，终局抢三，<BR>留三不冲，变化万千。<BR>
+            多个先手，细算次先，<BR>五子要点，次序在前。<BR>
+            斜线为阴，直线为阳，<BR>阴阳结合，防不胜防。<BR>
+            连三连四，易见为明，<BR>跳三跳四，暗剑深藏。<BR>
+            己落一子，敌增一兵，<BR>攻其要点，守其必争。<BR>
+            势已形成，败即降临，<BR>五子精华，一子输赢。<BR>
+          </div>
+          <div class="xl2 xm2">
+            <!--五子棋游戏-->
+            <link rel="stylesheet" type="text/css"
+              href="./skin/wuziqi/fiveChess.css">
+            <script src="./skin/wuziqi/CookieHandle.js"></script>
+            <script src="./skin/wuziqi/fiveChess_online.js"></script>
+
+            <div class="chessboard">
+              <!-- top line -->
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top"></div>
+              <div class="chess-top chess-right"></div>
+              <!-- line 1 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 2 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 3 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 4 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 5 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 6 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 7 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 8 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 9 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 10 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 11 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 12 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- line 13 -->
+              <div class="chess-left"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-middle"></div>
+              <div class="chess-right"></div>
+              <!-- bottom line  -->
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom"></div>
+              <div class="chess-bottom chess-right"></div>
+            </div>
+
+            <div class="operating-panel">
+
+              <table class="table table-striped" id="table_room"
+                style="width:100%;margin-top:10px">
+                <tr>
+                  <th>
+                    玩家
+                  </th>
+                  <th>
+                    状态
+                  </th>
+                </tr>
+                <tr>
+                  <td id="user1">
+                    玩家一
+                  </td>
+                  <td id="user1_status">
+                    未准备
+                  </td>
+                </tr>
+
+                <tr>
+                  <td id="user2">
+                    空
+                  </td>
+                  <td id="user2_status">
+                    未准备
+                  </td>
+                </tr>
+
+              </table>
+
+              <p>
+                <a id="black_btn" class="btn selected" href="#">黑&nbsp;&nbsp;子</a>
+                <a id="white_btn" class="btn" href="#">白&nbsp;&nbsp;子</a>
+              </p>
+              <p>
+                <a id="first_move_btn" class="btn selected" href="#">先&nbsp;&nbsp;手</a>
+                <a id="second_move_btn" class="btn" href="#">后&nbsp;&nbsp;手</a>
+              </p>
+              <a id="replay_btn" class="btn" href="#">准&nbsp;&nbsp;备</a>
+              <p id="result_tips"></p>
+            </div>
+
+            <div style="display: none">
+              <!-- 图片需合并 减少http请求数 -->
+              <img src="./skin/wuziqi/images/black.png" alt="preload" />
+              <img src="./skin/wuziqi/images/white.png" alt="preload" />
+              <img src="./skin/wuziqi/images/hover.png" alt="preload" />
+              <img src="./skin/wuziqi/images/hover_up.png" alt="preload" />
+              <img src="./skin/wuziqi/images/hover_down.png" alt="preload" />
+              <img src="./skin/wuziqi/images/hover_up_left.png" alt="preload" />
+              <img src="./skin/wuziqi/images/hover_up_right.png" alt="preload"
+                />
+              <img src="./skin/wuziqi/images/hover_left.png" alt="preload" />
+              <img src="./skin/wuziqi/images/hover_right.png" alt="preload" />
+              <img src="./skin/wuziqi/images/hover_down_left.png" alt="preload"
+                />
+              <img src="./skin/wuziqi/images/hover_down_right.png" alt="preload"
+                />
+              <img src="./skin/wuziqi/images/black_last.png" alt="preload" />
+              <img src="./skin/wuziqi/images/white_last.png" alt="preload" />
+            </div>
+            <script>$(document).ready(function() {fiveChess_online.init();});</script>
+            <!--五子棋游戏-->
+
+
+
+          </div>
+          <div class="xl4 xm4">
+            在线五子棋游戏
+          </div>
+          <div class="clear"></div>
+        </div>
+
+
+        <div class="wow fadeInUp" style="margin-top:0.5em;text-align: center"
+          data-wow-delay="0.3s">
+
+
+        </div>
+
+        <div class="ADforMB">
+
+        </div>
+        <div class="clear"></div>
+        <div class="wow fadeInUp" data-wow-delay="0.5s"></div>
+        <div class="clear"></div>
+        <div id="cms-widget-one">
+          <div class="clear"></div>
+        </div>
+        <div id="cms-widget-two">
+          <div class="clear"></div>
+        </div>
+
+        <footer id="colophon" class="site-footer wow fadeInUp"
+          data-wow-delay="0.3s" role="contentinfo">
+          <div class="site-info">
+            <span style="font-family: 'trebuchet ms', geneva; font-size: 12pt;">©
+              2019-2020 <a href="https://www.wuziqi123.com">五子琪在线玩</a></span>
+            <script type="text/javascript"
+              src="https://s96.cnzz.com/z_stat.php?id=1276108832&web_id=1276108832"></script><span
+              class="add-info"></span>
+            <div
+              style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+              <p style="float:left;height:20px;line-height:20px;margin: 0px 5px
+                0px 5px; color:#939393;">申明：本网站内容来源网民提供，本网不保证真实可靠，仅供娱乐，请勿传播或复制。</p>
+            </div>
+            <div style="display:none"></div>
+          </footer>
+          <script>a('bottom')</script>
+          <!--last time：2021-07-06 01:02:46-->
+        </body>
+        <script>
+          var user="";
+          $.ajax({
+            url:"check_login",
+            type:"GET",
+            data:"",
+            dataType:"json",
+            success: function(data){
+                if(data.msg=="未登录")
+                  window.location.href="./index.html";
+                else
+                {
+                  user=data.user;
+                  $("#user1").text(user);
+                }
+            }
+          });
+          $.ajax({
+            url:"get_againist",
+            type:"GET",
+            data:"",
+            dataType:"json",
+            success: function(data){
+              $("#user2").text(data.data);
+            }
+          });
+          function msg_send(msg,data)
+          {
+            socket.emit("msg",{"user":user,"msg":msg,"data":data});
+          }
+      </script>
+        <script>
+        var socket = io.connect('8.131.54.221:9090');
+        setInterval(() => {
+          $.ajax({
+            url:"update",
+            type:"GET",
+            data:`ws_id=${socket.id}`,
+            dataType:"json",
+            success: function(data){}
+          });
+        }, 1000);
+        // 当收到对方发来的数据后触发 message 事件
+        socket.on('message',function (data) {
+          console.log(data);
+          if(data.msg=="用户加入")
+          {
+            $("#user2").text(data.data);
+            if(fiveChess_online.ready)
+              msg_send("已准备",fiveChess_online.weight_user);
+          }
+          else if(data.msg=="已准备")
+          {
+            $("#user2_status").text("已准备");
+            fiveChess_online.ready_against=true;
+            fiveChess_online.weight_againist=data.data;
+            if(fiveChess_online.ready)
+            {
+              if(fiveChess_online.weight_user>fiveChess_online.weight_againist)
+              {
+                fiveChess_online.isPlayerTurn=true;
+                fiveChess_online.humanPlayer="black";
+                fiveChess_online.AIPlayer="white";
+                $("#first_move_btn").addClass("selected");
+                $("#second_move_btn").removeClass("selected");
+                $("#black_btn").addClass("selected");
+                $("#white_btn").removeClass("selected");
+              }
+              else
+              {
+                fiveChess_online.isPlayerTurn=false;
+                fiveChess_online.humanPlayer="white";
+                fiveChess_online.AIPlayer="black";
+                $("#first_move_btn").removeClass("selected");
+                $("#second_move_btn").addClass("selected");
+                $("#black_btn").removeClass("selected");
+                $("#white_btn").addClass("selected");
+              }
+              fiveChess_online.resetChessBoard();
+              fiveChess_online.gameStart();
+            }
+          }
+          else if(data.msg=="取消准备")
+          {
+            $("#user2_status").text("未准备");
+            fiveChess_online.ready_against=false;
+          }
+          else if(data.msg=="下棋")
+          {
+            fiveChess_online.playChess(data.data[0], data.data[1], fiveChess_online.AIPlayer);
+            fiveChess_online.isPlayerTurn = true;
+          }
+          else if(data.msg=="游戏结束")
+          {
+            fiveChess_online.showResult(false);
+          }
+          else if(data.msg="用户离开")
+          {
+            $("#user2_status").text("未准备");
+            $("#user2").text("空");
+          }
+        });
+    </script>
+        <script>
+      $(".operating-panel p a").addClass("disable");
+    </script>
+    <script>
+      window.onbeforeunload = function(ev) {
+        $.ajax({
+            url:"level",
+            type:"GET",
+            data:"",
+            dataType:"json",
+            success: function(data){}
+          });
+      };
+    </script>
+      </html>

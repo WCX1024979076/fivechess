@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>socket.io演示客户端</title>
+    <script crossorigin="anonymous" integrity="sha512-iZIBSs+gDyTH0ZhUem9eQ1t4DcEn2B9lHxfRMeGQhyNdSUz+rb+5A3ummX6DQTOIs1XK0gOteOg/LPtSo9VJ+w==" src="https://lib.baomitu.com/socket.io/4.1.2/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<h1>socket.io演示客户端</h1>
+<input type="text" placeholder="设置房间号" id="roomId">
+<button id="setRoom">确定</button>
+<input type="text" placeholder="发送消息" id="msg">
+<input type="text" placeholder="发送给" id="toRoomId">
+<button id="sayTo">确定</button>
+<div id="word">
+ 
+</div>
+</body>
+<script>
+    var socket = io.connect('8.131.54.221:9090');
+    $(setRoom).click(function(){
+        console.log($("#roomId").val());
+        socket.emit('setRoom',{"roomId":$("#roomId").val()}) ;
+    });
+    $(sayTo).click(function () {
+        var toMsg=$("#msg").val();
+        console.log(toMsg);
+        var id=$("#toRoomId").val();
+        console.log(id);
+        socket.emit("sayTo",{"to":id,"msg":toMsg});
+    });
+    // 当收到对方发来的数据后触发 message 事件
+    socket.on('message',function (data) {
+        word.innerHTML+="<p>"+data+"</p>";
+    });
+</script>
+</html>
