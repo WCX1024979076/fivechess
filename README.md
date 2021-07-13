@@ -62,8 +62,3 @@ node node_server.js
    ```
    node --experimental-worker ./node_server.js 
    ```
-
-=======
-# fivechess
-在线联机五子棋（基于Node.js和Mysql)
->>>>>>> 770243996d44d5872b2b856ca4e71a7ecfbcb19a
