@@ -57,7 +57,7 @@ node node_server.js
 
 2. Error: Cannot find module 'worker_threads'
 
-   解决方法： 用一下命令运行工程
+   解决方法： 用以下命令运行工程
 
    ```
    node --experimental-worker ./node_server.js 
